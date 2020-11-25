@@ -25,7 +25,6 @@ Blockly.Arduino.ks_analogRead = function() {
   var dropdown_pin = this.getFieldValue('PIN');
   Blockly.Arduino.setups_['setup_input_'+dropdown_pin] = 'pinMode('+dropdown_pin+', INPUT);';
   var code = 'analogRead(' + dropdown_pin + ')';
-  	  code += 'delay(1);';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 Blockly.Arduino.ks_y_buzzer = function() {
