@@ -1,0 +1,204 @@
+
+type="company" 
+block="block/NTRobot4W.js"
+generator="generator/NTRobot4W.js" 
+language="language/" 
+lib="NTRobot4W"
+hardware="hardware/arduino"
+media="media/NTRobot4W" 
+
+
+<script type="text/javascript" src="../../blocks/company/NTRobot4W.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/NTRobot4W.js"></script>
+<category id="catKSRobot" name="NTRobot4W-Robot" colour="20">
+
+	<!--                  控制输出                 -->
+	<block type="NTRobot4W_Robot_begin">
+			
+		</block>
+	<block type="NTRobot4W_wait">
+	</block>
+	<category id="controloutput1" name="Output" colour="20">
+		<block type="NTRobot4W_Robot_begin">
+			
+		</block>
+		<block type="NTRobot4W_wait">
+		</block>
+		<block type="ks_SW1">
+			
+		</block>
+		<block type="ks_Knob">
+			
+		</block>
+		<block type="ks_analogRead">
+			<value name="PIN">
+				<shadow type="pins_analog"></shadow>
+			</value>
+		</block>
+		<block type="ks_y_buzzer">
+			<shadow type="math_number">
+					<field name="NUM">0</field>
+			</shadow>
+		</block>
+		<!-- <block type="NTRobot4W_motor_stop">
+			
+		</block>
+		<block type="NTRobot4W_motor_forward">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_backward">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_TurnLeft">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_TurnRight">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_SpinLeft">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_SpinRight">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block> -->
+
+		<block type="ke_oled">
+			<value name="size">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="setCursorX">
+				<block type="math_number">
+					<field name="NUM">0</field>
+				</block>
+			</value>
+			<value name="setCursorY">
+				<block type="math_number">
+					<field name="NUM">0</field>
+				</block>
+			</value>
+			<value name="TEXT1">
+				<block type="text">
+					<field name="TEXT1"></field>
+				</block>
+			</value>
+		</block>
+		<block type="ke_oled_show">
+			
+		</block>
+		<block type="ke_oled_clear">
+
+		</block>
+
+		
+		
+	</category>
+	<category id="controloutput1" name="Motor" colour="20">
+		<block type="NTRobot4W_motor_stop">
+			
+		</block>
+		<block type="NTRobot4W_motor_stop_ch">
+			<value name="ch">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_speed_ch">
+			<value name="ch">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_forward">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_backward">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_TurnLeft">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_TurnRight">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_SpinLeft">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="NTRobot4W_motor_SpinRight">
+			<value name="speed">
+				<shadow type="math_number">
+					<field name="NUM">50</field>
+				</shadow>
+			</value>
+		</block>
+		<block type="ke_servo">
+			<value name="PIN">
+				<shadow type="math_number">0</shadow>
+			</value>
+			<value name="angle">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="time">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+	</category>	
+
+
+</category>
